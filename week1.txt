@@ -1,0 +1,35 @@
+# Loops 1st question
+
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(n):
+        print(i*i)
+
+
+# Print function
+
+if __name__ == '__main__':
+    n = int(input())
+    num=0
+    for i in range(1,n+1):
+        num=(num*10)+i
+    print(num)
+
+
+# leap year 
+
+def is_leap(year):
+    leap = False
+    if year%4==0:
+        if year%100==0:
+            if year%400==0:
+                leap=True
+            else:
+                leap=False
+        else:
+            leap=True
+    else:
+        False
+    return leap
+year = int(input())
+print(is_leap(year))
